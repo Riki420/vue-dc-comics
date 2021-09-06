@@ -3,7 +3,8 @@
     <footer>
         <div class="footer-top">
             <div class="container">
-                <div class="container-mini">
+                <div class="row space-around">
+                    <div class="container-mini">
                     <div class="col">
                         <h4>DC COMICS</h4>
                         <ul>
@@ -43,10 +44,26 @@
                         </ul>
                     </div>
                 </div>
+                <div class="container-mini">
+                    <figure>
+                        <img src="@/assets/img/dc-logo-bg.png" alt="" srcset="">
+                    </figure>
+                </div>
+                </div>
+                
             </div>
         </div>
-        <div class="footer-bottom">
-            
+        <div class="footer-bottom z-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" id="btn-signup" class="btn-outline-b">Sign Up Now!</button>
+
+                    </div>
+
+                </div>
+                    
+            </div>
         </div>
     </footer>
     
@@ -69,7 +86,7 @@ export default {
     .footer-bottom{
         height: 100px;
         display: flex;
-        background: grey;
+        background: #303030;
         color: #fff;
     }
     .container-mini{
@@ -87,5 +104,22 @@ export default {
     }
     .col h4{
         margin-bottom:10px;
+    }
+    .col ul li{
+        list-style-type: none;
+        margin-right: 10px;
+    }
+    .follow{
+        display: inline;
+    }
+    .btn-outline-b{
+        padding: 10px;
+        border: 1px solid #0c7cec;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+    .btn-outline-b:hover{
+        background-color: #12518d;
     }
 </style>

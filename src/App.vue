@@ -34,11 +34,21 @@ export default {
     max-width: 1000px;
     margin: 0 auto;
   }
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
   img{
     max-width: 100%;
   }
   a{
     color: #000;
     text-decoration: none;
+  }
+  .z-1{
+    z-index: 1;
+    position: relative;
   }
 </style>
