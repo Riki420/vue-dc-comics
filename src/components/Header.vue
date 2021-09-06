@@ -41,6 +41,7 @@ export default {
     .header-bottom{
         height: 120px;
         display: flex;
+        justify-content: space-between;
 
     }
     .main-nav{
