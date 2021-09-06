@@ -19,6 +19,10 @@ export default {
         background-color: #000;
         color: #fff;
         font-size: 1.2em;
-
-}
+    }
+    h3{
+        position: relative;
+        top: 50px;
+        left: 0;
+    }
 </style>

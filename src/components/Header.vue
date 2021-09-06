@@ -4,7 +4,7 @@
         <div class="container">
             <div class="header-bottom">
                 <figure>
-                    <img src="../assets/img/dc-logo.png" alt="">
+                    <img src="../assets/img/dc-logo.png" alt="DC-logo">
                 </figure>
                 <ul class="main-nav">
                     <li><a href="#">CHARACTERS</a></li>
@@ -54,5 +54,8 @@ export default {
         margin-right: 10px;
         justify-content: end;
         
+    }
+    figure{
+        padding: 6px;
     }
 </style>
