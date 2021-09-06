@@ -1,9 +1,10 @@
 <template>
-    <div class="container">
-        <div id="products">
-            Content Goes Here
+    <div id="products">
+        <div class="container">
+            <h3>Content Goes Here</h3>
         </div>
     </div>
+       
 </template>
 
 <script>
@@ -18,7 +19,6 @@ export default {
         background-color: #000;
         color: #fff;
         font-size: 1.2em;
-        display: flex;
-        align-items: center;
-    }
+
+}
 </style>

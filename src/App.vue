@@ -2,17 +2,20 @@
   <div id="app">
     <Header />
     <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
-import Main from "@/components/Main.vue"
+import Main from "@/components/Main.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: 'App',
   components: {
     Header,
-    Main
+    Main,
+    Footer
   }
 }
 </script>
@@ -24,10 +27,14 @@ export default {
     box-sizing: border-box;
   }
   .container{
-    min-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   img{
     max-width: 100%;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
   }
 </style>
