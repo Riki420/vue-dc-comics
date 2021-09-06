@@ -85,4 +85,7 @@ export default {
     .col a{
         color: #fff;
     }
+    .col h4{
+        margin-bottom:10px;
+    }
 </style>

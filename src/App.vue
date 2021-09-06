@@ -21,10 +21,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  body{
+    font-family: 'Roboto Condensed', sans-serif;;
   }
   .container{
     max-width: 1000px;
