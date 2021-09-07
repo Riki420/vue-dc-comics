@@ -4,13 +4,12 @@
             <h3>Content Goes Here</h3>
         </div>
     </div>
-       
 </template>
 
 <script>
 export default {
     name: "Main"
-    
+
 }
 
 </script>
