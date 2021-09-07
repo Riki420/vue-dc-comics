@@ -22,33 +22,14 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: 'Roboto Condensed', sans-serif;;
-  }
-  .container{
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+@import "@/assets/scss/style.scss";
+ 
+  
   .row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
   }
-  img{
-    max-width: 100%;
-  }
-  a{
-    color: #000;
-    text-decoration: none;
-  }
-  .z-1{
-    z-index: 1;
-    position: relative;
-  }
+  
 </style>
