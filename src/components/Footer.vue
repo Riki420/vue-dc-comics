@@ -54,15 +54,15 @@
             </div>
         </div>
         <div class="footer-bottom z-1">
-            <div class="container">
+            <div class="container-foot d-flex-i-center">
                 <div class="row">
                     <div class="col">
                         <button type="button" id="btn-signup" class="btn-outline-b">Sign Up Now!</button>
+                    </div>
+                    <div class="col">
 
                     </div>
-
                 </div>
-                    
             </div>
         </div>
     </footer>
@@ -106,21 +106,28 @@ export default {
     .col h4{
         margin-bottom:10px;
     }
-    .col ul li{
-        list-style-type: none;
-        margin-right: 10px;
+    .col {
+        ul{
+            list-style-type: none;
+            li{
+                margin-right: 10px;
+            }
+        }
     }
     .follow{
         display: inline;
     }
+
+    /*BUTTON OUTLINE*/
     .btn-outline-b{
         padding: 10px;
         border: 1px solid #0c7cec;
         background: transparent;
         color: #fff;
         cursor: pointer;
+            &:hover{
+                background-color: #12518d;
+            }
     }
-    .btn-outline-b:hover{
-        background-color: #12518d;
-    }
+    
 </style>
