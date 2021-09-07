@@ -1,13 +1,14 @@
 <template>
-
     <footer>
+    <!--FOOTER TOP-->
+
         <div class="footer-top">
             <div class="container">
                 <div class="row space-around">
                     <div class="container-mini">
                     <div class="col">
                         <h4>DC COMICS</h4>
-                        <ul>
+                        <ul class="mt-2">
                             <li><a href="#">Characters</a></li>
                             <li><a href="#">Comics</a></li>
                             <li><a href="#">Movies</a></li>
@@ -16,10 +17,15 @@
                             <li><a href="#">Video</a></li>
                             <li><a href="#">News</a></li>
                         </ul>
+                        <h4 class="mt-2">SHOP</h4>
+                        <ul>
+                            <li><a href="#">Shop DC</a></li>
+                            <li><a href="#">Shop DC Collectiables</a></li>
+                        </ul>
                     </div>
                     <div class="col">
                         <h4>DC</h4>
-                        <ul>
+                        <ul class="mt-2">
                             <li><a href="#">Terms of Use</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Ad Choices</a></li>
@@ -35,7 +41,7 @@
                     </div>
                     <div class="col">
                         <h4>SITES</h4>
-                        <ul>
+                        <ul class="mt-2">
                             <li><a href="#">DC</a></li>
                             <li><a href="#">MAD Magazine</a></li>
                             <li><a href="#">DC Kids</a></li>
@@ -46,21 +52,40 @@
                 </div>
                 <div class="container-mini">
                     <figure>
-                        <img src="@/assets/img/dc-logo-bg.png" alt="" srcset="">
+                        <img src="@/assets/img/dc-logo-bg.png" alt="logo-footer" class="position-dc-foot">
                     </figure>
                 </div>
                 </div>
                 
             </div>
         </div>
+        <!--FOOTER BOTTOM-->
         <div class="footer-bottom z-1">
-            <div class="container-foot d-flex-i-center">
+            <div class="container-foot">
                 <div class="row">
-                    <div class="col">
-                        <button type="button" id="btn-signup" class="btn-outline-b">Sign Up Now!</button>
-                    </div>
-                    <div class="col">
-
+                    <div class="col-foot">
+                        <!--BOTTONE SIGN-UP-->
+                        <button type="button" id="btn-signup" class="btn-outline-b">Sign-Up Now!</button>
+                        <ul class="none-style d-inline">
+                            <li>
+                                <span class="txt-big follow">FOLLOW US:</span>
+                            </li>
+                            <li>
+                                <a href="#"><img src="@/assets/img/footer-facebook.png" alt="Facebook-logo"></a> 
+                            </li>
+                            <li>
+                                <a href="#"><img src="@/assets/img/footer-periscope.png" alt="Periscope-logo"></a> 
+                            </li>
+                            <li>
+                                <a href="#"><img src="@/assets/img/footer-pinterest.png" alt="pinterest-logo"></a> 
+                            </li>
+                            <li>
+                                <a href="#"><img src="@/assets/img/footer-twitter.png" alt="twitter-logo"></a> 
+                            </li>
+                            <li>
+                                <a href="#"><img src="@/assets/img/footer-youtube.png" alt="youtube-logo"></a> 
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -76,58 +101,81 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .footer-top{
-        height: 400px;
-        background-image: url('../assets/img/footer-bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: #fff
-    }
-    .footer-bottom{
-        height: 100px;
-        display: flex;
-        background: #303030;
-        color: #fff;
-        justify-content: start;
-    }
+    @import "../assets/scss/vars.scss";
+    
+    /*CONTAINER E COL PER IL FOOTER*/
     .container-mini{
         max-width: 500px;
         display: flex;
         flex-direction: row;
+            .col{
+                margin-top: 20px;
+                width: calc(100% / 3);
+                    a{
+                    color: #fff;
+                    }
+                    h4{
+                    margin-bottom:10px;
+                    }
+                    .txt-big{
+                        font-size: 1.4em;
+                    }
+                    ul{
+                        list-style-type: none;
+                        li{
+                            margin-right: 10px;
+                            a{
+                                &:hover{
+                                    color: $dc-color;
+                                }
+                            }
+                        }
+                    }
+        }
+    }   
+    .poisition-end{
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
+    .position-dc-foot{
+        position: absolute;
+        right: 60px;
+        bottom: 10px;
+    }
 
-    }
-    .container-mini .col{
-        margin-top: 20px;
-        width: calc(100% / 3);
-    }
-    .col a{
-        color: #fff;
-    }
-    .col h4{
-        margin-bottom:10px;
-    }
-    .col {
-        ul{
-            list-style-type: none;
-            li{
-                margin-right: 10px;
+    /*FOOTER BOTTOM*/
+    .d-inline{
+        li{
+            margin-right: 10px;
+            a{
+                &:hover{
+                    filter: invert(1);
+                }
             }
         }
     }
-    .follow{
-        display: inline;
+    .col-foot{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+    
 
     /*BUTTON OUTLINE*/
     .btn-outline-b{
         padding: 10px;
-        border: 1px solid #0c7cec;
+        border: 1px solid $dc-color;
         background: transparent;
         color: #fff;
         cursor: pointer;
             &:hover{
-                background-color: #12518d;
+                background-color: $dc-color;
             }
+    }
+    .follow{
+        vertical-align: 10px;
     }
     
 </style>
