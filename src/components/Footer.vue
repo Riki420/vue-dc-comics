@@ -88,6 +88,7 @@ export default {
         display: flex;
         background: #303030;
         color: #fff;
+        justify-content: start;
     }
     .container-mini{
         max-width: 500px;
