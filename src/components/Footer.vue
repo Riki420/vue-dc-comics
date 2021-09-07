@@ -68,7 +68,7 @@
                         <button type="button" id="btn-signup" class="btn-outline-b">Sign-Up Now!</button>
                         <ul class="none-style d-inline">
                             <li>
-                                <span class="txt-big follow">FOLLOW US:</span>
+                                <span class="follow">FOLLOW US:</span>
                             </li>
                             <li>
                                 <a href="#"><img src="@/assets/img/footer-facebook.png" alt="Facebook-logo"></a> 
@@ -117,9 +117,7 @@ export default {
                     h4{
                     margin-bottom:10px;
                     }
-                    .txt-big{
-                        font-size: 1.4em;
-                    }
+                    
                     ul{
                         list-style-type: none;
                         li{
@@ -176,6 +174,8 @@ export default {
     }
     .follow{
         vertical-align: 10px;
+        color: $dc-color;
+        font-size: 1.2em;
     }
     
 </style>
