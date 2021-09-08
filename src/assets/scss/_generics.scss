@@ -42,21 +42,38 @@ a{
   display: flex;
   align-items: center;
 }
+.d-flex-j-center{
+  display: flex;
+  justify-content: center;
+}
 .d-inline{
   li{
     display: inline;
   }
 }
-/*MARGIN*/
+/*MARGIN E PADDING*/
 .mt-2{
   margin-top: 20px;
+}
+.mb-2{
+  margin-bottom: 20px;
 }
 .mr-1{
   margin-right: 10px;
 }
 
+.py-2{
+  padding: 20px 0;
+}
+
+
+
 .none-style{
   list-style-type: none;
+}
+
+.me-auto{
+  margin: 0 auto;
 }
 
 
