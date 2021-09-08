@@ -1,5 +1,6 @@
 <template>
     <div id="products" class="z-1">
+        <Jumbotron />
         <div class="container">
             <div class="row">
                 <div class="col-card py-2">
@@ -14,11 +15,13 @@
 </template>
 
 <script>
-import ProductCard from '../components/ProductCard.vue'
+import ProductCard from '../components/ProductCard.vue';
+import Jumbotron from '../components/Jumbotron.vue';
 export default {
     name: "Main",
     components: {
-        ProductCard
+        ProductCard,
+        Jumbotron
     },
     data(){
         return{
