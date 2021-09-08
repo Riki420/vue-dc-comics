@@ -4,23 +4,23 @@
           <div class="row">
               <div class="col-icon">
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="" class="w-25">
-                    <span class="txt-big">Digital Comics</span>
+                    <span>Digital Comics</span>
               </div>
               <div class="col-icon">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="" class="w-25">
-                    <span class="txt-big">Merchandise</span>
+                    <span>Merchandise</span>
               </div>
               <div class="col-icon">
                     <img src="../assets/img/buy-comics-shop-locator.png" alt="" class="w-25">
-                    <span class="txt-big">Shop Locator</span>
+                    <span>Shop Locator</span>
               </div>
               <div class="col-icon">
                     <img src="../assets/img/buy-comics-subscriptions.png" alt="" class="w-25">
-                    <span class="txt-big">Subscriptions</span>
+                    <span>Subscriptions</span>
               </div>
               <div class="col-icon">
                     <img src="../assets/img/buy-dc-power-visa.svg" alt="" class="w-25">
-                    <span class="txt-big">Power Visa</span>
+                    <span>Power Visa</span>
               </div>
           </div>
       </div>

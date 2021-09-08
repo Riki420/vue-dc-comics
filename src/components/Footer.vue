@@ -7,7 +7,7 @@
                 <div class="row space-around">
                     <div class="container-mini">
                     <div class="col">
-                        <h4>DC COMICS</h4>
+                        <h3>DC COMICS</h3>
                         <ul class="mt-2">
                             <li><a href="#">Characters</a></li>
                             <li><a href="#">Comics</a></li>
@@ -17,14 +17,14 @@
                             <li><a href="#">Video</a></li>
                             <li><a href="#">News</a></li>
                         </ul>
-                        <h4 class="mt-2">SHOP</h4>
+                        <h3 class="mt-2">SHOP</h3>
                         <ul>
                             <li><a href="#">Shop DC</a></li>
                             <li><a href="#">Shop DC Collectiables</a></li>
                         </ul>
                     </div>
                     <div class="col">
-                        <h4>DC</h4>
+                        <h3>DC</h3>
                         <ul class="mt-2">
                             <li><a href="#">Terms of Use</a></li>
                             <li><a href="#">Privacy Policy</a></li>
@@ -40,7 +40,7 @@
                         </ul>
                     </div>
                     <div class="col">
-                        <h4>SITES</h4>
+                        <h3>SITES</h3>
                         <ul class="mt-2">
                             <li><a href="#">DC</a></li>
                             <li><a href="#">MAD Magazine</a></li>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="container-mini">
                     <figure>
-                        <img src="@/assets/img/dc-logo-bg.png" alt="logo-footer" class="position-dc-foot">
+                        <img src="@/assets/img/dc-logo-bg.png" class="dc-foot" alt="logo-footer" >
                     </figure>
                 </div>
                 </div>
@@ -107,7 +107,7 @@ export default {
     
     /*CONTAINER E COL PER IL FOOTER*/
     .container-mini{
-        max-width: 500px;
+        min-width: 500px;
         display: flex;
         flex-direction: row;
             .col{
@@ -138,10 +138,9 @@ export default {
         right: 0;
         top: 50px;
     }
-    .position-dc-foot{
+    .dc-foot{
         position: absolute;
         right: 60px;
-        bottom: 10px;
     }
 
     /*FOOTER BOTTOM*/
