@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed&display=swap');
 @import "./assets/scss/style.scss";
  
   

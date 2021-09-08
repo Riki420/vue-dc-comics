@@ -3,14 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-card py-2">
-                    <div class="card mt-2" v-for="(comic, index) in comicsList" :key="index">
-                        <img :src="comic.thumb" alt="comic.series">
-                        <h4>{{ comic.series }}</h4>
-                        <p>{{ comic.price }}</p>
-                    </div>
+                    <ProductCard :comicsList="comics" v-for="(comic, index) in comicsList" :key="index" :comic="comic"/>
                 </div>
                 <div class="me-auto py-2">
-                    <button type="button" id="loadMore" name="loadMore" class="loadMoreBtn">Load More</button>
+                    <button type="button" id="loadMore" name="loadMore" class="loadMoreBtn">Load More...</button>
                 </div>
             </div>
         </div>
@@ -18,8 +14,12 @@
 </template>
 
 <script>
+import ProductCard from '../components/ProductCard.vue'
 export default {
     name: "Main",
+    components: {
+        ProductCard
+    },
     data(){
         return{
            comicsList: [
