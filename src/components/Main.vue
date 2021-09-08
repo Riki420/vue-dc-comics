@@ -2,6 +2,8 @@
     <div id="products" class="z-1">
         <Jumbotron />
         <div class="container">
+        <span class="current">CURRENT SERIES</span>
+
             <div class="row">
                 <div class="col-card py-2">
                     <ProductCard :comicsList="comics" v-for="(comic, index) in comicsList" :key="index" :comic="comic"/>
@@ -127,6 +129,14 @@ export default {
         top: 50px;
         left: 0;
     }
-    
+    .current{
+        background-color: $dc-color;
+        padding: 10px;
+        height: 40px;
+        position: relative;
+        bottom: 10px;
+        left: 80px;
+        font-size: 1.2em;
+    }
     
 </style>
